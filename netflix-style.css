@@ -1,0 +1,527 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+
+}
+body{
+    background-color: black;
+}
+/* .front-page{
+    height: 700px;
+    width: 100%;
+} */
+ main{
+    display: block;
+ }
+.background-img{
+    display: flex;
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.4;
+    /* filter: blur(1px);
+  -webkit-filter: blur(1px); */
+}
+.background-img img{
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+    background-size: fill;
+    background-color: #6f6b6b;
+}
+
+.nav {
+    display: flex;
+
+}
+.netflix-logo img{
+    position: absolute;
+    left: 120px;
+    top: 10px;
+    background-color: grey;
+
+}
+.lang{
+    display: flex;
+    justify-content: center;
+}
+.select-lang{
+    position: absolute;
+    display: inline;
+    z-index: +2;
+    right: 25vw;
+    top: 25px;
+
+    height: 32px;
+    width: 100px;
+    /* margin: 0px 0 44vw 90vw; */
+    background-color: transparent;
+    border: 0.5px solid white;
+    border-radius: 7px;
+    font-weight: 650;
+    /* display: flex;
+    justify-content: flex-end;
+    place-items: right; */
+}
+.sing-in{
+    display: flex;
+}
+.sing-in button{
+    z-index: +2;
+    position: absolute;
+    right: 15vw;
+    top: 25px;
+    background-color: #e5383b;
+    align-self: flex-end;
+    place-items: right;
+    height: 32px;
+    width: 100px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 8px;
+}
+.first-div{
+    display: flex;
+    flex-direction: column;
+    z-index: +30;
+    place-items: center;
+    position: absolute;
+    top: 22vw;
+    left: 15vw;
+    float: center;
+    /* font-size: 30px;
+    font-family: 'Times New Roman', Times, serif; */
+    
+}
+.first-div h1{
+    font-size: 52px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    line-height: 60px;
+}
+.first-div h3{
+    font-size: 29px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    line-height: 25px;
+}
+.first-div input{
+    height: 56px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: 0.5px solid rgb(186, 242, 186);
+    padding: 0px 0 0px 10px;
+    display: inline-block;
+    font-size: 22px;
+    margin-left: -16vw;
+}
+.first-div button{
+    position: relative;
+    bottom: 56px;
+    left: 300px;
+    height: 56px;
+    width: 200px;
+    background-color: red;
+    font-size: 25px;
+    border-radius: 10px;
+    border: 1px solid red;
+    margin-left: -12vw;
+}
+.separting-line-1{
+    height: 10px;
+    width: 100%;
+    background-color: #343a40;
+    border-radius: 8px;
+    position: absolute;
+    top: 98%;
+}
+.page-2{
+    overflow: hidden;
+    position: absolute;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.page-2 h1{
+    position: relative;
+    left: 100px;
+    font-size: 52px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    line-height: 90px;
+}
+.page-2 h3{
+    position: relative;
+    left: 100px;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    line-height: 45px;
+    line-height: 30px;
+
+}
+.vid-1{
+    /* display: flex; */
+    position: absolute;
+    left: 53vw;
+    z-index: +1;
+    width: 100%;
+    background-image: fixed;
+}
+.vid{
+    position: absolute;
+    bottom: 110px;
+    left: 79px;
+    z-index: -2;
+}
+.page-3{
+    position: absolute;
+    overflow: hidden;
+    height: 118vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-image: cover;
+    border: 0px;
+}
+.separting-line-2{
+    display: inline-block;
+    position: relative;
+    top: 35vw;
+    
+    height: 10px;
+    width: 100%;
+    background-color: #343a40;
+    border-radius: 8px;
+}
+.vid-2{
+    min-height: 200px;
+    height: 950px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.vid-2 img{
+    height: 367px;
+    width: 540px;
+    position: relative;
+    top: 21vw;
+    left: 140px;
+    z-index: -2;
+    opacity: 0.9;
+}
+.vid-2 .vid-img{
+    height: 100px;
+    width: auto;
+}
+/* .inside-vid-2{
+    border: 2px solid grey;
+    border-radius: 20px;
+    background-color: black;
+    height: 113px;
+    width: 350px;
+    z-index: +4;
+    position: absolute;
+    top: 60.4vw;
+    left: 16.5vw;
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center;
+} */
+/* .vid-2 .vid-img{
+    display: block;
+    z-index: -10;
+    position: absolute;
+    bottom: 600vw;
+    left: 200px;
+} */
+ .page-3 .text{
+    height: 300px;
+    width: 650px;
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 90vh;
+    left: 45vw;
+    line-height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+ }
+ .page-3 h1{
+    font-size: 52px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    line-height: 55px;
+    line-break: auto;
+}
+.page-3 h3{
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 0px;
+    line-height: 75px;
+    line-break: auto;
+    
+    
+}
+.separting-line-3{
+    height: 10px;
+    width: 100%;
+    background-color: #343a40;
+    border-radius: 8px;
+    position: absolute;
+    top: 118vw;
+}
+.page-4{
+    height: 37vw;
+    width: 99.5%;
+    position: absolute;
+    top: 119vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 2px solid white; */
+    place-items: center;
+    /* padding-left: 8vw; */
+}
+.page-4 .text{
+    width: 650px;
+    /* border: 2px solid white; */
+    position: relative;
+    left: 10vw;
+}
+.page-4 .text h1{
+    font-size: 52px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    line-height: 55px;
+    line-break: auto;
+}
+.page-4 .text h3{
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 0px;
+    line-height: 75px;
+    line-break: auto;
+}
+.page-4 .img video{
+    width: 400px;
+    z-index: -2;
+    position: relative;
+    bottom: 18vw;
+    left: 22vw;
+}
+.page-4 .img img{
+    position: relative;
+    top: 10vw;
+    left: 14vw;
+    opacity: 0.8;
+}
+.separting-line-4{
+    height: 10px;
+    width: 100%;
+    background-color: #343a40;
+    border-radius: 8px;
+    position: absolute;
+    top: 156vw;
+}
+.page-5{
+    height: 35vw;
+    width: 100%;
+    position: absolute;
+    top: 157vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+    /* border: 2px solid white; */
+}
+.page-5 .text{
+    width: 700;
+    height: auto;
+    /* border: 2px solid white; */
+}
+.page-5 .text h1{
+    font-size: 52px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    line-height: 55px;
+    line-break: auto;
+
+}
+.page-5 .text h3{
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 0px;
+    line-height: 75px;
+    line-break: auto;
+}
+.separting-line-5{
+    height: 10px;
+    width: 100%;
+    background-color: #343a40;
+    border-radius: 8px;
+    position: absolute;
+    top: 192vw;
+}
+.faq{
+    height: 55vw;
+    width: 100%;
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 193vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    place-items: center;
+
+}
+.faq .questions{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+
+
+}
+.faq .questions button{
+    height: 5vw;
+    width: 80vw;
+    margin-bottom: 6px;
+    background-color: #23262a;
+    border: none;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 50px;
+}
+.faq h1{
+    padding: 55px 0 30px 0;
+    font-size: 52px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    line-height: 55px;
+    line-break: auto;
+}
+.faq h3{
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    line-height: 75px;
+    line-break: auto;
+    padding-top: 25px;
+}
+.faq .questions .login{
+    display: flex;
+    flex-direction: row;
+    
+}
+.faq .questions .login input{
+    height: 56px;
+    width: 380px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: 0.5px solid rgb(186, 242, 186);
+    display: block;
+    font-size: 22px;
+    padding-left: 20px;
+}
+.faq .questions .login button{
+    height: 56px;
+    width: 240px;
+    background-color: red;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 1px solid red;
+    /* position: absolute; */
+    display: block;
+    margin-left: 5vw;
+    text-align: center;
+    padding-right: 20px;
+}
+.separting-line-6{
+    height: 10px;
+    width: 100%;
+    background-color: #343a40;
+    border-radius: 8px;
+    position: absolute;
+    top: 250vw;
+}
+.last-page-footer{
+    height: 30vw;
+    width: 100%;
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 251vw;
+    display: flex;
+    /* justify-content: center; */
+    /* place-items: center; */
+}
+footer{
+    color: #373f51;
+    
+}
+.last-page-footer .tel-call{
+    height: 3vw;
+    position: relative;
+    top: 4vw;
+    left: 12vw;
+    font-weight: lighter;
+    color: #b2b2b4;
+    font-size: 16px;
+}
+.last-page-footer .tel-call a{
+    color: #b2b2b4;
+
+}
+.last-page-footer .details-links{
+    height: 13vw;
+    width: 90%;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    place-items: center;
+    position: absolute;
+    top: 7vw;
+    left: 0.6vw;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 45px;
+    
+ 
+}
+.last-page-footer .details-links a{
+    color: #b2b2b4;
+
+}
+.select-lang-bottom{
+    display: inline;
+    height: 37px;
+    width: 130px;
+    background-color: transparent;
+    border: 0.5px solid white;
+    border-radius: 7px;
+    font-weight: 650;
+    position: relative;
+    top: 21vw;
+    left: -2.4vw;
+}
+.netflix-in{
+    height: 2vw;
+    position: relative;
+    top: 26vw;
+    left: -10.8vw;
+    color: #b2b2b4;
+    font-weight: lighter;
+}
+
